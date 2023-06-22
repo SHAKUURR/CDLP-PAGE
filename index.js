@@ -79,7 +79,7 @@ ScrollReveal().reveal(".team-box", {
 
 //redirect code
 // Assume the scannedURL variable contains the URL obtained from the barcode
-const scannedURL = "https://cdlp-hubs.vercel.app/shakur"; // Example value, replace with actual scanned URL
+const scannedURL = "https://cdlp-hubs.vercel.app/teams/index.html/shakur"; // Example value, replace with actual scanned URL
 
 // Parse the scanned URL to extract the name
 const name = scannedURL.split("/").pop(); // Extract the last portion of the URL
