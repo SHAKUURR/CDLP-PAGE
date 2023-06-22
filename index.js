@@ -76,3 +76,16 @@ ScrollReveal().reveal(".team-box", {
 	interval: 100,
 	rotate: { x: 1000, z: 1000 },
 });
+
+//redirect code
+// Assume the scannedURL variable contains the URL obtained from the barcode
+const scannedURL = "https://cdlp-hubs.vercel.app/shakur"; // Example value, replace with actual scanned URL
+
+// Parse the scanned URL to extract the name
+const name = scannedURL.split("/").pop(); // Extract the last portion of the URL
+
+// Remove the name from the scanned URL
+const modifiedURL = scannedURL.replace(`/${name}`, "");
+
+// Redirect the user to the modified URL
+window.location.href = modifiedURL;
